@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "61ed73ab-d27b-45b2-a8ff-8496c6dfcb43",
+		"name": "orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AllOrders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8094/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8094",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrderByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8094/orders/2b10e39f-47f2-42d9-93d2-2e0dea9d6135",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8094",
+					"path": [
+						"orders",
+						"2b10e39f-47f2-42d9-93d2-2e0dea9d6135"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateOrders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"warehouseId\": \"d4ddb773-fa1a-43b0-9254-f7873cf7101b\",\r\n    \"vendorId\": \"ed28da96-465e-4a79-86c7-fa6e37f946a8\",\r\n    \"productId\": \"e05f0dfb-45df-4e09-b0f8-d89e48dd7a87\",\r\n    \"accessorialId\": \"dc197922-90ed-4a8e-b9ec-fa210691291e\",\r\n    \"shippingAddress\": \"Detroit, MI\",\r\n    \"condition\": \"New\",\r\n    \"totalPrice\": 10100.0,\r\n    \"status\": \"PENDING\",\r\n    \"receivedOn\": \"2024-01-05T16:00:16.546+00:00\",\r\n    \"paymentMode\": \"debit***\",\r\n    \"billingAddress\": \"Novi, MI\",\r\n    \"paymentConfirmationNumber\": \"N9WD6Yoo2myyg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8094/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8094",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateOrders",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"warehouseId\": \"d4ddb773-fa1a-43b0-9254-f7873cf7101b\",\r\n    \"vendorId\": \"ed28da96-465e-4a79-86c7-fa6e37f946a8\",\r\n    \"productId\": \"e05f0dfb-45df-4e09-b0f8-d89e48dd7a87\",\r\n    \"accessorialId\": \"dc197922-90ed-4a8e-b9ec-fa210691291e\",\r\n    \"shippingAddress\": \"Detroit, MI\",\r\n    \"condition\": \"New\",\r\n    \"totalPrice\": 101.0,\r\n    \"status\": \"PENDING\",\r\n    \"receivedOn\": \"2024-01-05T16:00:16.546+00:00\",\r\n    \"paymentMode\": \"debit***\",\r\n    \"billingAddress\": \"Novi, MI\",\r\n    \"paymentConfirmationNumber\": \"N9WD6Yoo2myyg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8094/orders/2b10e39f-47f2-42d9-93d2-2e0dea9d6135",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8094",
+					"path": [
+						"orders",
+						"2b10e39f-47f2-42d9-93d2-2e0dea9d6135"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteOrders",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8094/orders/823542c0-b709-482d-b141-9eecb5d05f85",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8094",
+					"path": [
+						"orders",
+						"823542c0-b709-482d-b141-9eecb5d05f85"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

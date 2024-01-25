@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "ecaa150c-7d5c-43a8-891e-a3655b2786bf",
+		"name": "vendors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AllVendors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8093/vendors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8093",
+					"path": [
+						"vendors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VendorByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8093/vendors/c321162e-98d8-45c3-a800-0aa241fab1a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8093",
+					"path": [
+						"vendors",
+						"c321162e-98d8-45c3-a800-0aa241fab1a3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateVendor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"warehouseId\": \"488a3f80-e5b3-450f-8c68-a9c260bd98fa\",\r\n    \"businessName\": \"Test Vendor234\",\r\n    \"type\": \"Retailer\",\r\n    \"email\": \"testvedndor@gmail.com\",\r\n    \"phone\": \"7894562853\",\r\n    \"location\": \"NY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8093/vendors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8093",
+					"path": [
+						"vendors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateVendor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"warehouseId\": \"98ffe4dc-23bd-4e3a-8822-2f6d81371105\",\r\n    \"businessName\": \"Test Vendor234\",\r\n    \"type\": \"Retailer\",\r\n    \"email\": \"testvedndor@gmail.com\",\r\n    \"phone\": \"7894562853\",\r\n    \"location\": \"Newyork\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8093/vendors/e8390040-b3a4-4189-8b28-fa13e499c6b8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8093",
+					"path": [
+						"vendors",
+						"e8390040-b3a4-4189-8b28-fa13e499c6b8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteVendor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8093/vendors/b6a5e3ff-79ab-4bb0-82f4-7dfc8e574b39",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8093",
+					"path": [
+						"vendors",
+						"b6a5e3ff-79ab-4bb0-82f4-7dfc8e574b39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vendorsBywarehouse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8093/vendors/findByWarehouseId/488a3f80-e5b3-450f-8c68-a9c260bd98fa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8093",
+					"path": [
+						"vendors",
+						"findByWarehouseId",
+						"488a3f80-e5b3-450f-8c68-a9c260bd98fa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
